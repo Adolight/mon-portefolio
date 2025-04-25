@@ -51,7 +51,20 @@ header h1 {
     border-radius: 2px;
     transition: all 0.3s ease;
   }
-
+.nav {
+  position: relative;
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.nav.trouve {
+  display: flex;
+  flex-direction: row;
+}
 
   /*pour le profil et l'image du profil*/
   .presentation {
@@ -73,8 +86,13 @@ header h1 {
     height: 40px;
     background-color: rgb(67, 67, 219);
     border-radius: 5px;
+    transition: transform 0.3s ease;
   }
-
+  .presentation section label:hover {
+    transform: scale(1.05);
+    background-color: blueviolet;
+    box-shadow: 0 4px 20px rgba(100, 116, 126, 0.2);
+  }
   .presentation section label a{
     position: relative;
     margin: 1vw 1vw;
@@ -128,10 +146,19 @@ header h1 {
     width: 450px;
     height: 200px;
     background-color: rgb(183, 183, 190);
+    transition: transform 0.3s ease;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
+  .projet1:hover,
+  .projet2:hover,
+  .projet3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
   /*chanp de formulaire*/
   .formulaire {
     display: block;
