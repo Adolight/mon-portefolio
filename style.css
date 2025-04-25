@@ -1,0 +1,209 @@
+body {
+
+    background-color: #fff;
+    margin: 40px 40px;
+}
+/* donne un margin de 2% au div representant le corps de notre travail*/
+.corps {
+    position: flex;
+    background-color: #f8f4f4;
+    margin: 1% 1%;
+    height: 98%;
+    width: 96%;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    background-color: rgb(40, 40, 97);
+    height: 100px;
+    bottom: 82%;
+    border-radius: 5px;
+
+}
+header h1 {
+    display: flex;
+    position: relative;
+    color: #fff;
+    width: 30%;
+    padding: 10px 50px;
+    left: 0%;
+}
+ 
+  /* pour le navbar et le menu berger*/
+.menu {
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px;
+    left: 52%;
+    padding: 20px;
+    padding-top: 40px;
+    
+}
+.menu span {
+   
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+
+  /*pour le profil et l'image du profil*/
+  .presentation {
+    display: flex;
+    height: 250px;
+    padding: 0 50px;
+    background-color: #cec6c6;
+
+  }
+
+  .presentation section h2 {
+    
+    color: rgb(38, 38, 226);
+  }
+  
+  .presentation section label {
+    position: absolute;
+    margin: 10px 40px;
+    height: 40px;
+    background-color: rgb(67, 67, 219);
+    border-radius: 5px;
+  }
+
+  .presentation section label a{
+    position: relative;
+    margin: 1vw 1vw;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    top: 10px;
+    text-decoration: none;
+  }
+  .presentation .img img{
+    width: 160px; 
+    height: 220px;
+    position: absolute;
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    right: 200px;
+    border-radius: 40px;
+    margin-top: 15px;
+  }
+
+  /* le bloc de Apropos*/
+  .about {
+    position: relative;
+    height: 100px;
+    padding: 0px;
+    background-color: #f8f4f4;
+  }
+   .about p{
+    position: relative;
+    padding: 0 50px;
+   }
+   .about h1{
+    position: relative;
+    padding: 0 50px;
+   }
+
+  /* le bloc des projet realiser*/
+  .mesworks h1{
+    position: relative;
+    padding: 0 50px;
+  }
+  .container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; /* Espace entre les projets */
+    padding: 20px;
+  }
+  
+  .projet1, .projet2, .projet3 {
+    width: 450px;
+    height: 200px;
+    background-color: rgb(183, 183, 190);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  /*chanp de formulaire*/
+  .formulaire {
+    display: block;
+    position: relative;
+    height: 20%;
+    top: 82%;
+  }
+  .formulaire .input {
+    position: relative;
+    padding: 0 50px;
+ }
+  /*Mise en forme des champs input*/
+  .formulaire .input .textarea {
+    width: 98%;
+    background-color: #cec6c6;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+    bottom: 5%;
+
+  }
+  .formulaire .input input {
+    border-radius: 10px;
+  }
+  
+  .envoi {
+    position: relative;
+    bottom: 0px;
+    float: right;
+    right: 60px;
+  }
+  
+  .envoi button {
+    background-color: rgb(42, 42, 247);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  footer {
+    padding: 50px;
+  }
+  @media  (max-width:849px) {
+    .presentation .img img {
+        right: 100px;
+        width: 80%;
+    }
+    .menu {
+        left: 20%;
+    }
+  }
+  @media  (max-width:633px) {
+    
+  .about p{
+        position: relative;
+        padding: 0 25px;
+    }
+    .about h1{
+        position: relative;
+        padding: 0 25px;
+    }
+    .presentation {
+        display: flex;
+        height: 250px;
+        padding: 0 25px;
+        background-color: #cec6c6;
+    
+    }
+      .presentation .img img {
+        height: 120px;
+        right: 75px;
+        max-width: 100%;
+    }
+  }
